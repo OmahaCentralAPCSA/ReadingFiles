@@ -127,8 +127,14 @@ while input.hasNextLine()       - while there is still another line in the file
     ...
     
     ```
-    Your program should then print out the season record.
+    Your program should print W or L and the Game number.. At the end of the program, you should then print out the season record
     ```
+    Game 1: Win
+    Game 2: Win 
+    Game 3: Win 
+    ...
+    Game 10: Loss
+    
     Season Record: 10 - 4
     ```
 
