@@ -1,9 +1,9 @@
-# ReadingFiles
+# :books: ReadingFiles
 
 - Up until this point, the way our programs have gotten input data is from user input or hard-coding values.  
 - Reading and processing files in Java is not a simple task, even though it is a very common method to obtain input data for programs.  Java does not present an elegant solution to reading files like other programming languages do (like Python).  
 
-## Set up
+## :wrench: Set up
 - import `java.util.io;` to use a `File` object.  
 - import `java.util.Scanner;` to scan the `File` object. 
 
@@ -50,6 +50,9 @@ There are two approaches:  Token-based and Line-based
 1. Token-based processing  
 Processing input token by token (one word or one number at a time)  
 
+2. Line-based processing  
+Some files have information that is line-based.  That is, each line of the file represents a different case.  The approach for line-based is to use a Scanner to capture an entire line, then scan that line token by token. 
+
 There are 3 token-based reading method for the Scanner class:  
 `nextInt()`  for a reading an int value  
 `nextDouble()` for  reading a double value  
@@ -65,9 +68,16 @@ Using a while-loop with the 'look ahead' method allows to the program to stop wh
 ### Token-Based Examples
 Repl.it Link to Example:  [Token-Based File Processing](https://repl.it/@collinholmquist/Token-Based-Processing#Main.java) 
 
+Here is the idea in psuedo-code:  
+```
+while input.hasNext()
+    value = input.next() 
+```
+Note: You can sub in `hasNextInt()` or `hasNextDouble()`
 
-2. Line-based processing  
-Some files have information that is line-based.  That is, each line of the file represents a different case.  The approach for line-based is to use a Scanner to capture an entire line, then scan that line token by token.  
+
+### Line-Based Examples  
+Repl.it Link to Example:  [Line-Based File Processing](https://repl.it/@collinholmquist/Line-Based-Processing#Main.java)  
 
 Here is the idea in psuedo-code:  
 
@@ -78,8 +88,4 @@ while input.hasNextLine()       - while there is still another line in the file
     while line.hasNext()        - while the line still has tokens left to process
         value = line.next()     - capture the token(s) and do something with it  
 ```
-
-### Line-Based Examples  
-Repl.it Link to Example:  [Line-Based File Processing](https://repl.it/@collinholmquist/Line-Based-Processing#Main.java)
-
 
