@@ -118,9 +118,9 @@ while input.hasNextLine()       - while there is still another line in the file
 
 3.  Write a program that reads an input file `scores.txt` that contains the scores from Nebraska football games.  Each result will be its own line and values will be separated by spaces.
 
-The text file will be formatted like such:   
+    The text file will be formatted like such:   
 
-Nebraska Score - Opponent Score - Opponent Name
+    Nebraska Score - Opponent Score - Opponent Name
     
     ```
     49 10 Western Kentucky
@@ -129,7 +129,7 @@ Nebraska Score - Opponent Score - Opponent Name
     ...
     
     ```
-Your program should then print out the season record.
+    Your program should then print out the season record.
     ```
     Season Record: 10 - 4
     ```
