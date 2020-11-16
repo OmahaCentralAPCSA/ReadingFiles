@@ -1,0 +1,13 @@
+55 7 Florida Atlantic
+31 24 McNeese State
+55 19 Fresno State
+41 31 Miami
+45 14 Illinois
+22 27 Michigan State
+38 17 Northwestern
+42 24 Rutgers
+35 14 Purdue
+24 59 Wisconsin
+24 28 Minnesota
+37 34 Iowa
+42 45 USC
