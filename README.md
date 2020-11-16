@@ -62,7 +62,8 @@ There are also 3 methods that "look ahead" and tell us if we have more data to p
 
 Using a while-loop with the 'look ahead' method allows to the program to stop when the end of the file as been reached.  
 
-### Token-Based Example  
+### Token-Based Examples
+Repl.it Link to Example:  [Token-Based File Processing](https://repl.it/@collinholmquist/Token-Based-Processing#Main.java) 
 
 
 2. Line-based processing  
@@ -70,5 +71,15 @@ Some files have information that is line-based.  That is, each line of the file 
 
 Here is the idea in psuedo-code:  
 
+```
+while input.hasNextLine()       - while there is still another line in the file  
+    line = input.nextLine()     - capture line of text  
+    
+    while line.hasNext()        - while the line still has tokens left to process
+        value = line.next()     - capture the token(s) and do something with it  
+```
+
+### Line-Based Examples  
+Repl.it Link to Example:  [Line-Based File Processing](https://repl.it/@collinholmquist/Line-Based-Processing#Main.java)
 
 
