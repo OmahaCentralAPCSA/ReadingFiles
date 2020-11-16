@@ -8,7 +8,31 @@
 - import `java.util.Scanner;` to scan the `File` object. 
 
 ```
+import java.util.io;
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String [] args) {
+    
+            //create String to hold filename
+        String filename = 'example.txt';
+        
+            //Create a Scanner object that takes a parameter of a new File
+        File file = new File(filename); 
+        Scanner input = new Scanner(file); 
+        
+        /*
+        Note: you can also do the above lines in one statement
+        Scanner input = new Scanner(new File('example.txt')); 
+        */
+        
+        //Use Scanner and it's methods to read the file's contents.          
+        
+        
+
+    }
+
+}
 ```
 ## Exceptions and using `throws`  
 To put simply:  
