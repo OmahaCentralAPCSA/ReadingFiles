@@ -34,7 +34,11 @@ public class Main {
 
 }
 ```
+
 ## Exceptions and using `throws`  
+If we tried to run something similar to what we have above, Java would return an error saying:  
+    *"unreported exception java.io.FileNotFoundException; must be caught or declared to be thrown"*
+
 To put simply:  
 An exception is an error that prevent a program from continuing normal execution.  In this case, the compiler is worried that it might not be able to find whatever file we want to scan.  Thus we need to provide a special phrase in your method header that basically is saying "I am taking the risk that the file might not be found".  We are okay doing that since, we will have the file(s) in our program directory.  
 
@@ -88,4 +92,45 @@ while input.hasNextLine()       - while there is still another line in the file
     while line.hasNext()        - while the line still has tokens left to process
         value = line.next()     - capture the token(s) and do something with it  
 ```
+
+
+# :running: File Reading Exercises -> Complete 2 of the 3. 
+
+1.  Write a program to count the number of words in `AliceInWonderland.txt`.  
+    The program should then print out the total number of words.  
+    
+    Then ->   
+    Alter your program to find the longest word in the book.  If there is a tie between the words, then choose the last one.  
+    
+    
+2.  Write a program that reads an input file `names.txt` with names on each line separated by spaces.  Some names appear multiple times in a row on the same line, but the same names always        are next to each.  For each line, print the most commonly occuring name.  If there is a tie, use the first name that had that many occurrences; if all names are unique, print the first name on the line.  
+
+    Example:  
+    ```
+    Benson Eric Eric Kim Kim Kim Jenny Nancy Nancy Paul Paul
+    Ethan Jamie Jamie Alyssa Alyssa Helene Helene Jessica Jessica
+
+    //the input above, your program should print: 
+    Most common: Kim
+    Most common: Jamie
+
+    ```
+
+3.  Write a program that reads an input file `scores.txt` that contains the scores from Nebraska football games.  Each result will be its own line and values will be separated by spaces.
+
+The text file will be formatted like such:   
+
+Nebraska Score - Opponent Score - Opponent Name
+    
+    ```
+    49 10 Western Kentucky
+    38 17 Idaho
+    56 21 Washington
+    ...
+    
+    ```
+Your program should then print out the season record.
+    ```
+    Season Record: 10 - 4
+    ```
 
