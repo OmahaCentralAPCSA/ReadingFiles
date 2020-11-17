@@ -81,16 +81,17 @@ Note: You can sub in `hasNextInt()` or `hasNextDouble()`
 
 
 ### Line-Based Examples  
-Repl.it Link to Example:  [Line-Based File Processing](https://repl.it/@collinholmquist/Line-Based-Processing#Main.java)  
+Repl.it Link to Example:  [Line-Based File Processing-2](https://repl.it/@collinholmquist/Line-Based-Processing-2#Main.java)  
 
 Here is the idea in psuedo-code:  
 
 ```
-while input.hasNextLine()       - while there is still another line in the file  
+while(input.hasNextLine())      - while there is still another line in the file  
     line = input.nextLine()     - capture line of text  
+    Scanner readLine = new Scanner(line)         - create Scanner to read captured line
     
-    while line.hasNext()        - while the line still has tokens left to process
-        value = line.next()     - capture the token(s) and do something with it  
+    while readLine.hasNext()        - while the line still has tokens left to process
+        value = readLine.next()     - capture the token(s) and do something with it  
 ```
 
 
