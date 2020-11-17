@@ -82,7 +82,7 @@ Note: You can sub in `hasNextInt()` or `hasNextDouble()`
 
 
 ### Line-Based Examples  
-Repl.it Link to Example:  [Line-Based File Processing-1](https://repl.it/@collinholmquist/Line-Based-Processing-1#Main.java)
+Repl.it Link to Example:  [Line-Based File Processing-1](https://repl.it/@collinholmquist/Line-Based-Processing-1#Main.java)  
 Repl.it Link to Example:  [Line-Based File Processing-2](https://repl.it/@collinholmquist/Line-Based-Processing-2#Main.java)  
 
 Here is the idea in psuedo-code:  
