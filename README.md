@@ -57,20 +57,21 @@ Processing input token by token (one word or one number at a time)
 2. Line-based processing  
 Some files have information that is line-based.  That is, each line of the file represents a different case.  The approach for line-based is to use a Scanner to capture an entire line, then scan that line token by token. 
 
-There are 3 token-based reading method for the Scanner class:  
-`nextInt()`  for a reading an int value  
-`nextDouble()` for  reading a double value  
-`next()` for reading the next token as a String.  
-
-There are also 3 methods that "look ahead" and tell us if we have more data to process:  
-`hasNextInt()` tests whether there is another int value to read  
-`hasNextDouble()` tests whether there is another double value  
-`hasNext()` tests whether there is another String  
+> There are 3 token-based reading method for the Scanner class:  
+> `nextInt()`  for a reading an int value  
+> `nextDouble()` for  reading a double value  
+> `next()` for reading the next token as a String.  
+>
+> There are also 3 methods that "look ahead" and tell us if we have more data to process:  
+> `hasNextInt()` tests whether there is another int value to read  
+> `hasNextDouble()` tests whether there is another double value  
+> `hasNext()` tests whether there is another String  
 
 Using a while-loop with the 'look ahead' method allows to the program to stop when the end of the file as been reached.  
 
 ### Token-Based Examples
-Repl.it Link to Example:  [Token-Based File Processing](https://repl.it/@collinholmquist/Token-Based-Processing#Main.java) 
+Repl.it Link to Example 1:  [Token-Based File Processing-1](https://repl.it/@collinholmquist/Token-Based-Processing-1#Main.java)  
+Repl.it Link to Example 2:  [Token-Based File Processing-2](https://repl.it/@collinholmquist/Token-Based-Processing-2#Main.java) 
 
 Here is the idea in psuedo-code:  
 ```
@@ -81,6 +82,7 @@ Note: You can sub in `hasNextInt()` or `hasNextDouble()`
 
 
 ### Line-Based Examples  
+Repl.it Link to Example:  [Line-Based File Processing-1](https://repl.it/@collinholmquist/Line-Based-Processing-1#Main.java)
 Repl.it Link to Example:  [Line-Based File Processing-2](https://repl.it/@collinholmquist/Line-Based-Processing-2#Main.java)  
 
 Here is the idea in psuedo-code:  
